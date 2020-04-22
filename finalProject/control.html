@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Li Java Tutor</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="content">
+                <a href="home.html">Kevin Li </a>
+                <a href="index.html">Java Tutor</a>
+                <a href="about.html">Contact Me</a>
+            </div>
+        </header>
+        <div class="index">
+            <div class="in">
+                <b id=""> index</b>
+                <img src="assets/img/Screen Shot 2020-04-17 at 8.36.38 PM.png" alt="" id="hidden">
+                <img src="assets/img/Screen Shot 2020-04-17 at 8.36.45 PM.png" alt="" id="expand">
+            </div>
+            <div class="i" id="list">
+                <div class="inner" id="list1">
+                    <img src="assets/img/Screen Shot 2020-04-17 at 8.55.22 PM.png" id="list-1">
+                    <a href="index.html">What is java</a>
+                    <div class="sublist" id="list1-sublist">
+                        <ul>
+                            <li><a href="index.html#intro">Introduction to Java</a></li>
+                            <li><a href="index.html#versions">Versions of java</a></li>
+                            <li><a href="index.html#jdk">JDK & JRE</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="inner" id="list2">
+                    <img src="assets/img/Screen Shot 2020-04-17 at 8.55.22 PM.png" id="list-2">
+                    <a href="structures.html">basic structures</a>
+                    <div class="sublist" id="list2-sublist">
+                        <ul>
+                            <li><a href="structures.html#title">Defining and using classes</a></li>
+                            <li><a href="structures.html#variable">Variables</a></li>
+                            <li><a href="structures.html#computer">Computer memory</a></li>
+                            <li><a href="structures.html#Integer">Integer</a></li>
+                            <li><a href="structures.html#Float">Float</a></li>
+                            <li><a href="structures.html#Boolean">Boolean</a></li>
+                            <li><a href="structures.html#Character">Character</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="inner" id="list3">
+                    <img src="assets/img/Screen Shot 2020-04-17 at 8.55.22 PM.png" id="list-3">
+                    <a href="control.html">Flow control</a>
+                    <div class="sublist" id="list3-sublist">
+                        <ul>
+                            <li><a href="control.html#title">input and output</a></li>
+                            <li><a href="control.html#if">if statement</a></li>
+                            <li><a href="control.html#while">while loop</a></li>
+                            <li><a href="control.html#doWhile">do while</a></li>
+                            <li><a href="control.html#for">for loop</a></li>
+                            <li><a href="control.html#break">break and continue</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="inner" id="list4"> <img src="assets/img/Screen Shot 2020-04-17 at 8.55.22 PM.png">
+                    </img>
+                </div>
+                <div class="inner" id="list5"> <img src="assets/img/Screen Shot 2020-04-17 at 8.55.22 PM.png">
+                    </img>
+                </div>
+                <div class="inner" id="list6"> <img src="assets/img/Screen Shot 2020-04-17 at 8.55.22 PM.png">
+                    </img>
+                </div>
+                <div class="inner" id="list7"> <img src="assets/img/Screen Shot 2020-04-17 at 8.55.22 PM.png">
+                    </img>
+                </div> -->
+            </div>
+        </div>
+        <div class="context">
+            <h4 class="title">Flow control</h4>
+            <h3>Input and output</h3>
+            <div>Output</div>
+            <div>In the previous code, we always used System.out.println() to output something to the screen.
+                Println is the abbreviation of print line, which means prints the output in the current line and then
+                switch to next line.
+                Therefore, if you do
+                want to wrap lines after output, you can use print() instead:</div>
+            <img src="assets/img/output.png" alt="" width="90%">
+            <div>Input</div>
+            <div>However, on the other hand, Java's input is much more complex than its output.</div>
+            <div>Let's start with an example of reading a string and an integer from the console:</div>
+            <img src="assets/img/input1.png" alt="" width="90%">
+            <div>First of all, we import <div class="highlight">java.util.scanner</div> through the <div
+                    class="highlight">import</div> statement.
+                Import is a statement to import
+                a class, which must be placed at the beginning of the Java source code. Later, we will explain how to
+                use import in detail in the java <div class="highlight">package</div>.</div>
+            <div>Then, create the <div class="highlight">scanner</div> object and pass it in to <div class="highlight">
+                    system</div>. <div class="highlight">System.out</div>
+                represents the standard
+                output <div class="highlight">stream</div>, and system. In represents the standard input stream. It is
+                possible to use
+                system. In
+                directly to read user input, but more complex code is needed, and subsequent code can be simplified
+                through <div class="highlight">scanner</div>.</div>
+            <div>With the scanner object, to read the string entered by the user, use <div class="highlight">
+                    scanner.NextLine()</div>; to read the
+                integer entered by the user, use <div class="highlight">
+                    scanner.Nextint()</div>. Scanner automatically
+                converts data types, so you
+                don't have to convert them manually.</div>
+            <h3 id="if">If statement</h3>
+            <div>In Java programs, if you want to decide whether to execute a piece of code according to the certain
+                conditions,
+                you need the if statement.</div>
+            <div>An if statement is in the form:</div>
+            <img src="assets/img/if1.png" alt="" width="90%">
+            <div>For a valid if statement, <div class="highlight">else if</div> and <div class="highlight">else</div>
+                are optional.</div>
+            <div>Let's look at an example:</div>
+            <img src="assets/img/if.png" alt="" width="90%">
+            <div>If the score is greater than 70, console will prints "Pass". Otherwise, console will prints "No Pass".
+            </div>
+            <h3 id="while">while loop</h3>
+            <div>A while loop is to let the computer repeatedly do certain operations until the condition is
+                <Strong>NOT</Strong> satisfied. </div>
+            <img src="assets/img/while.png" alt="" width="90%">
+            <div>Note that the <div class="highlight">while</div> loop will judge the condition of the loop first and
+                then execute the operations within. Therefore, it is
+                possible to fail the condition at the beginning and not execute the loop once.</div>
+
+            <div>In addition, It is critical to remember to make your <div class="highlight">while</div> loop that will
+                eventually stop at some points(fail the condition). Otherwise, you will get an infinite loop. Consider
+                the
+                following while loop:</div>
+            <img src="assets/img/while1.png" alt="" width="90%">
+            <h3 id="doWhile">Do while</h3>
+            <div>Do while is similar to while loop, as you can probably already knew from it's name. Indeed, there is
+                only one difference between <div class="highlight"> do while</div> and <div class="highlight">while
+                </div>
+                . Do
+                while will executed the body of the loop first, and then test the conditions.
+            </div>
+            <img src="assets/img/doWhile.png" alt="" width="90%">
+            <h3 id="for">For loop</h3>
+            <div>Other than <div class="highlight">while</div> and <div class="highlight">do while</div> loop, <div
+                    class="highlight">for</div> loop is the most frequently used loop in java.</div>
+            <div>
+                <div class="highlight">for </div> loop is extremely powerful. It utilizes a java <div class="highlight">
+                    interface</div> iterator, to iterate through the loop. Consider of the following example:
+            </div>
+            <img src="assets/img/for.png" alt="" width="90%">
+            <div>Before the <div class="highlight">for</div> loop is executed, the initialization statement int i = 1
+                will be executed first. It
+                defines the counter variable <div class="highlight">i</div> and assigns the initial value to 1. Then,
+                check the loop condition <div class="highlight">i
+                    <=100</div> before the loop, and execute <div class="highlight">i++</div> (equivalent to i=i +
+                1) automatically after the loop.
+                Therefore, compared with the <div class="highlight">while
+                </div> loop, the <div class="highlight">for</div> loop unifies the code for updating the counter outside
+                of the loop. Inside
+                the
+                body of <div class="highlight">for</div> loop, you do not need to update the variable <div
+                    class="highlight">i</div>.</div>
+            <h3 id="break">Break and continue</h3>
+            <div>
+                There are two special operations can be used in any of the loops, <div class="highlight">break</div> and
+                <div class="highlight"> continue</div>.
+            </div>
+            <div>break</div>
+            <div>During a loop, you can use the <div class="highlight">break</div> statement to force stop the current
+                loop.</div>
+            <div>During a loop, you can use the <div class="highlight">continue</div> statement to ignore the current
+                iteration, and force move on to the next iteration by ignoring the remaining operations in the loop.
+            </div>
+            <img src="assets/img/break.png" alt="" width="90%">
+        </div>
+    </div>
+    <script src="assets/javascript/script.js">
+    </script>
+</body>
+
+</html>

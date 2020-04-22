@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Li Java Tutor</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="content">
+                <a href="home.html">Kevin Li </a>
+                <a href="index.html">Java Tutor</a>
+                <a href="about.html">Contact Me</a>
+            </div>
+        </header>
+        <div class="index">
+            <div class="in">
+                <b id=""> index</b>
+                <img src="assets/img/Screen Shot 2020-04-17 at 8.36.38 PM.png" alt="" id="hidden">
+                <img src="assets/img/Screen Shot 2020-04-17 at 8.36.45 PM.png" alt="" id="expand">
+            </div>
+            <div class="i" id="list">
+                <div class="inner" id="list1">
+                    <img src="assets/img/Screen Shot 2020-04-17 at 8.55.22 PM.png" id="list-1">
+                    <a href="index.html">What is java</a>
+                    <div class="sublist" id="list1-sublist">
+                        <ul>
+                            <li><a href="index.html#intro">Introduction to Java</a></li>
+                            <li><a href="index.html#versions">Versions of java</a></li>
+                            <li><a href="index.html#jdk">JDK & JRE</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="inner" id="list2">
+                    <img src="assets/img/Screen Shot 2020-04-17 at 8.55.22 PM.png" id="list-2">
+                    <a href="structures.html">basic structures</a>
+                    <div class="sublist" id="list2-sublist">
+                        <ul>
+                            <li><a href="structures.html#title">Defining and using classes</a></li>
+                            <li><a href="structures.html#variable">Variables</a></li>
+                            <li><a href="structures.html#computer">Computer memory</a></li>
+                            <li><a href="structures.html#Integer">Integer</a></li>
+                            <li><a href="structures.html#Float">Float</a></li>
+                            <li><a href="structures.html#Boolean">Boolean</a></li>
+                            <li><a href="structures.html#Character">Character</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="inner" id="list3">
+                    <img src="assets/img/Screen Shot 2020-04-17 at 8.55.22 PM.png" id="list-3">
+                    <a href="control.html">Flow control</a>
+                    <div class="sublist" id="list3-sublist">
+                        <ul>
+                            <li><a href="control.html#title">input and output</a></li>
+                            <li><a href="control.html#if">if statement</a></li>
+                            <li><a href="control.html#while">while loop</a></li>
+                            <li><a href="control.html#doWhile">do while</a></li>
+                            <li><a href="control.html#for">for loop</a></li>
+                            <li><a href="control.html#break">break and continue</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="inner" id="list4"> <img src="assets/img/Screen Shot 2020-04-17 at 8.55.22 PM.png">
+                    </img>
+                </div>
+                <div class="inner" id="list5"> <img src="assets/img/Screen Shot 2020-04-17 at 8.55.22 PM.png">
+                    </img>
+                </div>
+                <div class="inner" id="list6"> <img src="assets/img/Screen Shot 2020-04-17 at 8.55.22 PM.png">
+                    </img>
+                </div>
+                <div class="inner" id="list7"> <img src="assets/img/Screen Shot 2020-04-17 at 8.55.22 PM.png">
+                    </img>
+                </div> -->
+            </div>
+        </div>
+        <div class="context">
+            <h4 class="title">Basic java structures</h4>
+            <h3>Defining and using classes</h3>
+            <div id="intro">Let's first analyze a complete Java program. What is its basic structure:</div>
+            <img src="assets/img/helloWorld.png" alt="" width=130% height="400px">
+            <div class="phl">
+                Because Java is an object-oriented language, the basic unit of a program is<div class="highlight">
+                    class
+                </div>, and class is the
+                keyword. The <div class="highlight"> class</div>
+                name defined here is <div class="highlight"> hello
+                </div>:
+            </div>
+            <div class="phl">Notice that<div class="highlight"> public </div> is an access modifier, indicating that the
+                <div class="highlight">class</div> is
+                public.</div>
+            <img src="assets/img/defineClass.png" alt="" width="100%" height="400px">
+            <div class="phl">
+                Within a <div class="highlight"> class</div>, you can define several <div class="highlight">
+                    methods</div>:
+            </div>
+            <div> A typical java class such as the one above has several parts:</div>
+            <div class="li">
+                <li>Instance variable：You can define as many as you can to represent a data type.</li>
+                <li>Constructor：Instantiate the class, create a class instance.</li>
+                <li>Instance Methods：Methods that can only be accessed by the instances of the class.</li>
+                <li>Static Methods: Methods that can be accessed by all instances of the class.</li>
+            </div>
+            <h3 id="variable">Variables</h3>
+            <div>
+                In Java, variables are divided into two types: primitive type and reference type.
+            </div>
+            <div>Let's start with primitive types.</div>
+            <div>In Java, variables must be defined before use. When defining variables, you can give them an initial
+                value. For example:</div>
+            <img class="phl" src="assets/img/variable.png" alt="" width="100%">
+            <div>The above statement defines a variable of <div class="highlight">int</div> type with the
+                name of
+                <div class="highlight"> X </div>and
+                the initial value
+                of <div class="highlight">1</div>.</div>
+            <div>
+                Not writing the initial value is equivalent to giving it a default value. The default value is always
+                <div class="highlight">0</div> for the primitive type <div class="highlight">int</div>.
+            </div>
+            <div>There are a total of 8 primitive data types: boolean, byte, char, short, int, long, float and
+                double.</div>
+            <div>Primitive data type is the most basic data type in java that the CPU can perform operation directly.
+                Java defines those 8 primitive data types as following: </div>
+            <div class="li">
+                <li>Integer type: byte, short, int, long</li>
+                <li> Float type: float, double</li>
+                <li> Character type: char</li>
+                <li>Boolean type: Boolean</li>
+            </div>
+            <h3 id="computer">Computer Memory</h3>
+            <div>What's the difference between these basic data types defined by Java? To understand these differences,
+                we must have a brief understanding of the basic structure of computer memory.</div>
+            <div>The minimum storage unit of computer memory is byte, a byte is an 8-bit binary number, that is, 8 bits.
+                Its binary representation range is from 00000000 to 11111111, converted to 0-255 in decimal system and
+                00-FF in hexadecimal system.</div>
+            <div>Memory units are numbered from 0, called memory addresses. Each memory unit can be regarded as a room,
+                and the memory address is the house number.</div>
+            <img src="assets/img/memory.png" alt="" width="100%">
+            <div>Different primitive data types have different bytes. Let's take a look at the number of bytes used by
+                java basic
+                primitive data types:</div>
+            <img src="assets/img/bytes.png" alt="" width="100%" height="20%">
+            <div>
+                <div class="highlight">Byte</div> is exactly one byte, while<div class="highlight"> long</div>and <div
+                    class="highlight">double</div> need eight bytes.
+            </div>
+            <h3 id="Integer">Integer</h3>
+            <div>
+                For integer types, Java only defines signed integers, and the highest bit represents the sign bit (0 for
+                positive, 1 for negative). The maximum range of integers can be expressed as follows:</div>
+            <div class="li">
+                <li>byte：-128 ~ 127</li>
+                <li> short: -32768 ~ 32767</li>
+                <li> int: -2147483648 ~ 2147483647</li>
+                <li>long: -9223372036854775808 ~ 9223372036854775807</li>
+            </div>
+            <h3 id="Float">Float</h3>
+            <div>Floating numbers are decimals. When decimal numbers are expressed by scientific counting method,
+                the decimal point can be "floating". For example, 1234.5 can be expressed as 12.345x10^2 or 1.2345x10^3,
+                so it is called floating point</div>
+            <div>Here is some examples:</div>
+            <img src="assets/img/float.png" alt="" width="40%">
+            <h3 id="Boolean">Boolean</h3>
+            <div>Boolean has only two values: true and false. Boolean is always the result of relational operation, such
+                as >, <,==, !=.</div> <div>Java language does not stipulate the storage of boolean type, because in
+                    theory,
+                    only 1 bit is needed
+                    to store boolean type, but usually the JVM will express Boolean as a 4-byte integer.</div>
+            <h3 id="Character">Character</h3>
+            <div>Character type <div class="highlight">char</div> represents a character. Java's char type can represent
+                a Unicode character in
+                addition to standard ascii:</div>
+            <img src="assets/img/char.png" alt="" width="80%">
+        </div>
+
+    </div>
+
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>
