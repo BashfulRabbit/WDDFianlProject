@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Li Java Tutor</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="content">
+                <a href="home.html">Kevin Li </a>
+                <a href="index.html">Java Tutor</a>
+                <a href="about.html">Contact Me</a>
+            </div>
+        </header>
+        <div class="index">
+            <div class="in">
+                <b id=""> index</b>
+                <img src="assets/img/Screen Shot 2020-04-17 at 8.36.38 PM.png" alt="" id="hidden">
+                <img src="assets/img/Screen Shot 2020-04-17 at 8.36.45 PM.png" alt="" id="expand">
+            </div>
+            <div class="i" id="list">
+                <div class="inner" id="list1">
+                    <img src="assets/img/Screen Shot 2020-04-17 at 8.55.22 PM.png" id="list-1">
+                    <a href="index.html">What is java</a>
+                    <div class="sublist" id="list1-sublist">
+                        <ul>
+                            <li><a href="index.html#intro">Introduction to Java</a></li>
+                            <li><a href="index.html#versions">Versions of java</a></li>
+                            <li><a href="index.html#jdk">JDK & JRE</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="inner" id="list2">
+                    <img src="assets/img/Screen Shot 2020-04-17 at 8.55.22 PM.png" id="list-2">
+                    <a href="structures.html">basic structures</a>
+                    <div class="sublist" id="list2-sublist">
+                        <ul>
+                            <li><a href="structures.html#title">Defining and using classes</a></li>
+                            <li><a href="structures.html#variable">Variables</a></li>
+                            <li><a href="structures.html#computer">Computer memory</a></li>
+                            <li><a href="structures.html#Integer">Integer</a></li>
+                            <li><a href="structures.html#Float">Float</a></li>
+                            <li><a href="structures.html#Boolean">Boolean</a></li>
+                            <li><a href="structures.html#Character">Character</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="inner" id="list3">
+                    <img src="assets/img/Screen Shot 2020-04-17 at 8.55.22 PM.png" id="list-3">
+                    <a href="control.html">Flow control</a>
+                    <div class="sublist" id="list3-sublist">
+                        <ul>
+                            <li><a href="control.html#title">input and output</a></li>
+                            <li><a href="control.html#if">if statement</a></li>
+                            <li><a href="control.html#while">while loop</a></li>
+                            <li><a href="control.html#doWhile">do while</a></li>
+                            <li><a href="control.html#for">for loop</a></li>
+                            <li><a href="control.html#break">break and continue</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="inner" id="list4"> <img src="assets/img/Screen Shot 2020-04-17 at 8.55.22 PM.png">
+                    </img>
+                </div>
+                <div class="inner" id="list5"> <img src="assets/img/Screen Shot 2020-04-17 at 8.55.22 PM.png">
+                    </img>
+                </div>
+                <div class="inner" id="list6"> <img src="assets/img/Screen Shot 2020-04-17 at 8.55.22 PM.png">
+                    </img>
+                </div>
+                <div class="inner" id="list7"> <img src="assets/img/Screen Shot 2020-04-17 at 8.55.22 PM.png">
+                    </img>
+                </div> -->
+            </div>
+        </div>
+        <div class="context">
+            <h4 class="title">What is java?</h4>
+            <p id="intro">Java was first developed by James Gosling of Sun company (acquired by Oracle) in the early
+                1990s. It was
+                originally named oak, aiming at the embedded application of small household appliances. However, the
+                market did not respond. No one would have expected the rise of the Internet to bring oak back to life?
+                Sun
+                company transformed oak and officially released it under the name of Java in 1995. The reason is that
+                oak has been registered, so sun has registered the trademark of Java. With the rapid development of
+                Internet, Java has become the most important network programming language.</p>
+            <p>
+                It is intended to let application developers write once, run anywhere (WORA), meaning that compiled
+                Java code can run on all platforms that support Java without the need for recompilation.[17] Java
+                applications are typically compiled to bytecode that can run on any Java virtual machine (JVM)
+                regardless of the underlying computer architecture. The syntax of Java is similar to C and C++, but it
+                has fewer low-level facilities than either of them. As of 2019, Java was one of the most popular
+                programming languages in use according to GitHub, particularly for client-server web
+                applications, with a reported 9 million developers(source: wikipiki).
+            </p>
+            <img src="assets/img/java-language.jpg" alt="" width="500px" height="400px">
+
+            <p id="versions">As the rapid development of java, SUN later published three different versions of java:</p>
+            <div class="li">
+                <li>
+                    Java SE：Standard Edition
+                </li>
+                <li> Java EE：Enterprise Edition</li>
+                <li> Java ME：Micro Edition</li>
+            </div>
+            <p>In short, Java SE is the Standard Version, including the standard JVM and standard library, while Java EE
+                is the enterprise version. It just adds a large number of APIs and libraries on the basis of Java SE, so
+                as to facilitate the development of web applications, databases, message services, etc. the application
+                of Java EE uses the same virtual machine as Java SE.
+            </p>
+            <p>
+                Java ME is different from Java SE. It is a "slimming version" for embedded devices. The standard library
+                of Java SE cannot be used on java ME. The virtual machine of java ME is also a "slimming version".</p>
+            <p>There is no doubt that Java SE is the core of the entire Java platform, and Java EE is necessary for
+                further learning web applications. The familiar frameworks like spring are part of the Java EE open
+                source ecosystem. Unfortunately, java ME has never really become popular. Instead, Android development
+                has become one of the standards for mobile platforms. Therefore, there is no special need to learn java
+                ME</p>
+            <p id="jdk">When beginners start learn Java, they often hear JDK and JRE. What exactly are they?</p>
+            <div class="li">
+                <li>
+                    JDK：Java Development Kit
+                </li>
+                <li> JRE：Java Runtime Environment</li>
+            </div>
+            <p>In short, JRE is a virtual machine running Java bytecode. However, if you only have the java source code,
+                you
+                need JDK to compile it into Java bytecode, because JDK not only contains JRE, but also provides
+                compiler, debugger and other development tools.</p>
+            <p>their relationship is as follows:</p>
+            <img src="assets/img/Screen Shot 2020-04-20 at 10.57.23 PM.png" alt="">
+        </div>
+
+    </div>
+
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>
